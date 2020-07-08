@@ -4,9 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .column{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 200px)
+{
+    .column {
+        width: 50%;
+    }
+}
+    </style>
 </head>
 <body>
+
+
     <div class="div1">
         <p class="text">This is a practice branch</p>
             <ul>
@@ -19,6 +43,13 @@
     </div>
     
 <button class=Header head--first></button>
+<div class="row">
+    <div class="column">
+        <img class="dog" src="imgdog.png" alt="image of dog" style="width: 100%;">
+    </div>
+    <div class="column">
+        <img class="kit" src="kitten.png" alt="kitten"style="width: 100%">
+</div>
     
 </body>
 </html>
