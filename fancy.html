@@ -3,17 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{background-color: aqua; padding:30px; animation: move 8s linear infinite;}
+        .content {width: 100vw; height:100vh; background-color:red;}
+        @keyframes move{
+
+            0%{
+             transform: translate(0);
+            }
+            50%{
+            transform:translate(1100px);
+            }
+            }
+        </style>
+
+    </style>
     <link rel="stylesheet" href="fancy.css">
     <title>Animation</title>
 
 </head>
 <body>
 <h1>Input</h1>
-<div class="Form"><input type="text" name="Name" autocomplete="off"></div>
+<div class="Form"><input type="text" name="Name" autocomplete="off" role="list"></div>
 <label for="name" class="label-name">
 <span class="content-name">Name</span>
 </label>
-<div class="container">
+<div class="container"></div>
+<div class="content"></div>
+<div class="Dog">
+    <img src="imgdog.png" alt="Image of dog">
+</div>
+<div class="containe">
     <header>
         <nav>
             <ul>
@@ -26,6 +46,6 @@
                 </li>
             </ul>
         </nav>
-    </header>div>
+    </header>
 </body>
 </html>
