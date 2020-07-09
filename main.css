@@ -1,34 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+.column{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .text{
     text-align: center;
     color: red;
+    position: absolute;
 }
 .div1 {
     border: 5px;
     border-color: blueviolet;
-}
-.header {
-color: blueviolet;
-display: #fff;
-}
-  .head--first{
-      color: brown;
-  }  
-.div1 {
     background-color: gold;
     padding: 1em;
     margin: auto;
     outline-offset: 5px;
 }
-.text {
-position: absolute;
+.header {
+color: blueviolet;
+display: #fff;
+}
+.head--first{
+    color: brown;
+}  
+
+a:hover {
+    background-color: blue;
 }
 
-
+@keyframes reset {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    60% {opacity: .5;}
+    100% {opacity: 1;}
+}
 .pan {
-     border-radius: 50%;
-    -webkit-transition: -webkit-transform 1s ease-in-out;
-             transition: transform 1s ease-in-out;
-}
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    animation-name: reset;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+    animation-delay: 0, 1s;
+    }
 
  pan:hover {
     -webkit-transform: rotate(180deg);
