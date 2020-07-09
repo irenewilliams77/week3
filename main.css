@@ -31,12 +31,46 @@ position: absolute;
 }
 
  pan:hover {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
         }
 
 .dog{
     padding: 50px;
 }
-
+@keyframes rest {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    60% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+.pan {
+    display: inline-block;
+    height: auto;
+    width: 700px;
+    animation-name: reset, fade-in;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+    animation-delay: 0, 1s; 
+}
+a:hover {
+    background-color: blue;}
+  
+.dog {
+    width: 100%; 
+    height: auto;
+}
+.dog{
+    width: 100%; 
+    height: auto; 
+}
+.btn{
+    display: inline-block;
+    color: blue;
+}
+.btn--first{
+    color: chartreuse;
 }

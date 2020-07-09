@@ -4,30 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="" rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
 
     <title>Document</title>
     <style>
-        
-        *{
-            box-sizing: border-box;
-        }
-        .column{
-    float: left;
-    width: 50%;
-    padding: 5px;
+          *{
+        box-sizing: border-box;
+    }
+    .column{
+float: left;
+width: 50%;
+padding: 5px;
 }
 .row::after{
-    content: "";
-    clear: both;
-    display: table;
+content: "";
+clear: both;
+display: table;
 }
 @media screen and (max-width: 200px)
 {
-    .column {
-        width: 50%;
-    }
+.column {
+    width: 50%;
 }
+        
     </style>
 </head>
 <body>
@@ -44,41 +43,18 @@
         
     </div>
     
-<button class=Header head--first></button>
+<button class="btn btn--first></button>
 <div class="row">
     <div class="column">
-        <img class="dog" src="imgdog.png" alt="image of dog" style="width: 100%; height: auto;">
+        <img class="dog" src="imgdog.png" alt="image of dog"/>
     </div>
     <div class="column">
-        <img class="dog" src="imgdog.png" alt="image of dog" style="width: 100%; height: auto;">
+        <img class="dog" src="imgdog.png" alt="image of dog"/>
 </div>
-<style>
+
 <div>
-
-    <a img src="panda.jpg"  alt="panda" class="pan"></a>
-       -we
+    <img class="pan" src="panda.jpg"  alt="panda"/>
 </div>
-a:hover {
-    background-color: blue;}
 
-    @keyframes pan {
-        0% {opacity: 0;}
-        100% {opacity: 0;}
-    }
-    @keyframes pan {
-        0% {opacity: 0;}
-        60% {opacity: 0;}
-        100% {opacity: 1;}
-    }
-    .pan {
-        display: inline-block;
-        height: 100px;
-        width: 100px;
-        animation-name: reset, fade-in;
-        animation-duration: 3s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: 5;
-        animation-delay: 0, 1s;
-    </style>
 </body>
 </html>
