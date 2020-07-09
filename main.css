@@ -1,4 +1,7 @@
-
+.text{
+    text-align: center;
+    color: red;
+}
 .div1 {
     border: 5px;
     border-color: blueviolet;
@@ -20,3 +23,21 @@ display: #fff;
 position: absolute;
 }
 
+#center {
+    display: block;
+    margin: auto;
+    height: 500px;
+   width: auto;
+   animation: ease-in;}
+
+.center:hover {-webkit-transition: -webkit-transform .8s ease-in-out;
+                        transition: transform .8s ease-in-out;
+}
+.center:hover{
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360 deg);
+
+}
+.dog{
+    padding: 50px;
+}
