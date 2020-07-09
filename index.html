@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link href="" rel="stylesheet" href="main.css" type="text/css" />
+
     <title>Document</title>
     <style>
         
@@ -38,7 +39,7 @@
                 <li class="one">first</li>
                 <li class="two">second</li>
                 <li class="three">third</li>
-                <li> class="four"forth</li>
+                <li class="four">forth</li>
             </ul>
         
     </div>
@@ -51,8 +52,33 @@
     <div class="column">
         <img class="dog" src="imgdog.png" alt="image of dog" style="width: 100%; height: auto;">
 </div>
-    <div>
-       <img src="panda.jpg" alt="panda smiling" id="center">
-    </div>
+<style>
+<div>
+
+    <a img src="panda.jpg"  alt="panda" class="pan"></a>
+       -we
+</div>
+a:hover {
+    background-color: blue;}
+
+    @keyframes pan {
+        0% {opacity: 0;}
+        100% {opacity: 0;}
+    }
+    @keyframes pan {
+        0% {opacity: 0;}
+        60% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .pan {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        animation-name: reset, fade-in;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 5;
+        animation-delay: 0, 1s;
+    </style>
 </body>
 </html>
